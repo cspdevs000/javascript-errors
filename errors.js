@@ -9,6 +9,7 @@ try {
     console.log(e.lineNumber);
     console.log(e.columnNumber);
     console.log(e.stack);
+    console.log(e.errors);
     }
 }   
 
@@ -23,6 +24,8 @@ function rangeError(n) {
         if (error instanceof RangeError)
     {
         console.log('error i guess');
+        console.log(e.errors);
+        console.log(e.stack);
     }
 }
 
@@ -37,6 +40,7 @@ function referenceError() {
         console.log(e.lineNumber);
         console.log(e.columnNumber);
         console.log(e.stack);
+        console.log(e.errors);
     }
 }
 
@@ -51,6 +55,7 @@ function syntaxError() {
         console.error(e.lineNumer);
         console.error(e.columnNumber);
         console.error(e.stack);
+        console.error(e.errors);
     }
 }
 
@@ -65,6 +70,7 @@ function typeError() {
         console.log(e.lineNumber);
         console.log(e.columnNumber);
         console.log(e.stack);
+        console.log(e.errors);
     }
 }
 
@@ -79,6 +85,7 @@ function uriError() {
         console.log(e.lineNumber);
         console.log(e.columnNumber);
         console.log(e.stack);
+        console.log(e.errors);
     }
 }
 
@@ -104,6 +111,8 @@ function internalError(x) {
 
 function hello() {
     console.log('hi');
+    console.log(e.errors);
+    console.log(e.stack);
 }
 
 function myError() {
@@ -111,6 +120,8 @@ function myError() {
         throw new Error('Bonque');
     } catch(e) {
         console.log('Bonque')
+        console.log(e.errors);
+        console.log(e.stack);
     }
 }
 
