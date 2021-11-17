@@ -92,6 +92,7 @@ function aggregateError() {
         console.log(e.message);
         console.log(e.name);
         console.log(e.errors);
+        console.log(e.stack);
     }
 }
 

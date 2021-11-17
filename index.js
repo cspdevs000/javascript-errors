@@ -1,7 +1,7 @@
 const errors = require('./errors');
 
 // errors.evalError();
-// errors.rangeError(600);
+errors.rangeError(600);
 // errors.referenceError();
 // errors.syntaxError();
 // errors.typeError();
